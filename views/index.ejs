@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<h1>Heads or Tails</h1>
+<h2>Try Your Luck</h2>
+
+<form action="/flip" method="POST">
+    <input placeholder="name" name="name" class="name">
+    <label for="heads or tails ">flip the coin:</label>
+    <select name="prediction" id="headsTails">
+        <option value="default">--Select--</option>
+        <option id = "headsCoin" value="heads">heads</option>
+        <option id = "tailsCoin" value="tails">tails</option>
+    </select>
+
+</form>
+<button class="flip" type="submit">FLIP</button>
+
+<button class="reset" type="submit" method="DELETE" action="/flip">Reset Player</button>
+<div class="player " id="playerOne" >
+</div>
+<div class="player " id="playerTwo">
+</div>
+<h3 id="winnerLoser"></h3>
+<script src="main.js"></script>
+</body>
+</html>
